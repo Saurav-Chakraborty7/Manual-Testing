@@ -1,0 +1,971 @@
+{
+	"info": {
+		"_postman_id": "56d27559-1913-4bf1-a85d-66980451f196",
+		"name": "Ostad_B7_Q4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37854123"
+	},
+	"item": [
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI"
+					},
+					{
+						"key": "If-None-Match",
+						"value": "W/\"3c82-pe4ZD6yyPMtLiftWXe0xbqi5qIc\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/search?keyword=Nike+react+phantom+run+flyknit+2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike+react+phantom+run+flyknit+2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-182?size=25&color=14"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sku\":\"NJC48508-Black-S\",\"qty\":\"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/mine/items",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI"
+					},
+					{
+						"key": "If-None-Match",
+						"value": "W/\"4542-s4hyDgLtu/07+14WxiDa4GsJ9tc\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/search?keyword=Nike+react+phantom+run+flyknit+2"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/cart",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "increaseProduct",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/cart"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qty\":1,\"action\":\"increase\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/8f1091a9-3414-491f-b856-a1ac3a2a7077/items/7c78313e-f183-4608-82a4-03c8132dfc8b",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"8f1091a9-3414-491f-b856-a1ac3a2a7077",
+						"items",
+						"7c78313e-f183-4608-82a4-03c8132dfc8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decreaseProduct",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/cart"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qty\":1,\"action\":\"decrease\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/8f1091a9-3414-491f-b856-a1ac3a2a7077/items/7c78313e-f183-4608-82a4-03c8132dfc8b",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"8f1091a9-3414-491f-b856-a1ac3a2a7077",
+						"items",
+						"7c78313e-f183-4608-82a4-03c8132dfc8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productRemove",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/cart"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/8f1091a9-3414-491f-b856-a1ac3a2a7077/items/7c78313e-f183-4608-82a4-03c8132dfc8b",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"8f1091a9-3414-491f-b856-a1ac3a2a7077",
+						"items",
+						"7c78313e-f183-4608-82a4-03c8132dfc8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "noteCheck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/checkout"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"note\":\"Working?\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/carts/a0b3c23f-908e-43d7-9739-765379cef53f/shippingNotes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"carts",
+						"a0b3c23f-908e-43d7-9739-765379cef53f",
+						"shippingNotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailCheck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/checkout"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"hello123@gmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/carts/a0b3c23f-908e-43d7-9739-765379cef53f/contacts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"carts",
+						"a0b3c23f-908e-43d7-9739-765379cef53f",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addressCheck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "Origin",
+						"value": "https://demo.evershop.io"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/checkout"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"address\":{\"full_name\":\"DemO\",\"telephone\":\"Test1234\",\"address_1\":\"demoTest1234\",\"city\":\"demoCountry1\",\"country\":\"CN\",\"province\":\"CN-35\",\"postcode\":\"14asd\"},\"method\":\"2d42df4e-fb1b-498e-a78a-2d53610b1d91\",\"type\":\"shipping\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/carts/a0b3c23f-908e-43d7-9739-765379cef53f/addresses",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"carts",
+						"a0b3c23f-908e-43d7-9739-765379cef53f",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "If-None-Match",
+						"value": "W/\"63cb-DcyTitNoO303mN8oLXHoWbUQY+A\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/cart"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/checkout",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "finalCheckout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en-GB;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "__stripe_mid=36f21719-3ee6-4890-a2b1-ddd1d4f9f2fbe053f5; sid=s%3ADCMN3ugqV5skTd0ucVEZornbvRhSgk1X.TDhkd22SFFz2NLtT0JJbpAwXvuMqVBK9U0yv%2FRI%2FmVI; __stripe_sid=f9606ca9-bc4b-47cf-929a-6a075b4b22b5e97e22"
+					},
+					{
+						"key": "Referer",
+						"value": "https://demo.evershop.io/checkout"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/checkout/success/dc060c23-5d7b-4060-87bf-fb0e6fa22752",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"checkout",
+						"success",
+						"dc060c23-5d7b-4060-87bf-fb0e6fa22752"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
